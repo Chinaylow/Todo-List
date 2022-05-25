@@ -1,0 +1,120 @@
+*{
+    box-shadow: none;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-image: url(book.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: green;
+    background-blend-mode: overlay;
+    font-family: sans-serif;
+}
+header{
+    text-align: center;
+    margin-top: 30px;
+    background-image: linear-gradient(to left, white, green, black );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+
+}
+#container{
+    width: 90%;
+    max-width: 700px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+  
+    
+    
+}
+#box1{
+    background-color: black;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    width: 80%;
+    max-width: 500px;
+    margin: 0 auto;
+    border-radius: 7px;
+
+}
+#box1 h1{
+    margin-bottom: 20px;
+    background-image: linear-gradient(to right, green, white );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+.key-in{
+    width: 70%;
+    padding: 10px 30px;
+    outline: none;
+    border: none;
+    
+
+}
+.btn{
+    padding: 10px 30px;
+    outline: none;
+    border: none;
+    background-image: linear-gradient(to right, green, white);
+}
+.error{
+    color: red;
+    margin-top: 10px;
+}
+#list{
+    width: 90%;
+    max-width: 540px;
+    margin: 0 auto;
+
+}
+#list li{
+    position: relative;
+    list-style: none;
+    margin-bottom: 3px;
+    padding: 15px 0 15px 20px;
+    background-color: white;
+    border-radius: 7px;
+    cursor: pointer;
+    animation: go-up .4s ease-in alternate-reverse;
+  
+
+}
+#list li:hover{
+    background-color: rgb(244, 233, 233);
+}
+@keyframes go-up {
+    0%{
+        transform: scale(0.7);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+.close{
+    padding: 12px 20px 18px 25px;
+    background-image: linear-gradient(to right, green, white);
+ position: absolute;
+ top: 0;
+ right: 0;
+}
+@media screen and (max-width:410px) {
+    #container{
+        width: 95%;
+        max-width: 700px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        
+      
+        
+        
+    }
+}
